@@ -1,7 +1,7 @@
 class Game {
   constructor() {
 
-    /*
+    
     this.resetTitle = createElement("h2");
     this.resetButton = createButton("");
 
@@ -9,7 +9,7 @@ class Game {
 
     this.leader1 = createElement("h2");
     this.leader2 = createElement("h2");
-    */
+    
   }
 
   getState() {
@@ -47,7 +47,7 @@ class Game {
     form.titleImg.position(40, 50);
     form.titleImg.class("gameTitleAfterEffect");
 
-    /*//C39
+    //C39
     this.resetTitle.html("Reinicar Jogo");
     this.resetTitle.class("resetText");
     this.resetTitle.position(width / 2 + 200, 40);
@@ -63,12 +63,12 @@ class Game {
     this.leader1.position(width / 3 - 50, 80);
 
     this.leader2.class("leadersText");
-    this.leader2.position(width / 3 - 50, 130);*/
+    this.leader2.position(width / 3 - 50, 130);
   }
 
   play() {
-//    this.handleElements();
-//    this.handleResetButton();
+    this.handleElements();
+    this.handleResetButton();
 
     Player.getPlayersInfo();
 
@@ -106,7 +106,7 @@ class Game {
       drawSprites();
     }
   }
-/*
+
   handleResetButton() {
     this.resetButton.mousePressed(() => {
       database.ref("/").set({
@@ -117,8 +117,8 @@ class Game {
       window.location.reload();
     });
   }
-*/
-/*  showLeaderboard() {
+
+  showLeaderboard() {
     var leader1, leader2;
     var players = Object.values(allPlayers);
     if (
@@ -160,7 +160,7 @@ class Game {
     this.leader1.html(leader1);
     this.leader2.html(leader2);
   }
-  */
+  
 
   handlePlayerControls() {
     if (keyIsDown(UP_ARROW)) {
