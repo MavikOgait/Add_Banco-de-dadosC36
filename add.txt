@@ -16,6 +16,23 @@ ADD AO
 </script>
 
 
+ADD FORM
+
+ handleMousePressed() {        
+    this.playButton.mousePressed(() => {
+      this.input.hide();
+      this.playButton.hide();
+      var message = `
+      Olá, ${this.input.value()}
+      espere o outro jogador entrar...`;
+      this.greeting.html(message);
+    });
+  }
+
+
+
+
+
 ADD (POSICAO OBSTACULOS)
 
 var obstaclesPositions = [
