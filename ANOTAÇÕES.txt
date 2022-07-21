@@ -1,3 +1,28 @@
+ 
+//------------índice da matriz 
+
+      var index = 0;
+      for (var plr in allPlayers) {
+        //adicione 1 ao índice para cada loop
+        index = index + 1;
+
+        //use os dados do banco de dados para exibir os carros nas direções x e y
+        var x = allPlayers[plr].positionX;
+        var y = height - allPlayers[plr].positionY;
+
+        cars[index - 1].position.x = x;
+        cars[index - 1].position.y = y;
+
+
+
+
+
+
+
+
+
+
+
 -----------colisão carro-----------
 
 
